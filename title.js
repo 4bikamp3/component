@@ -3,3 +3,6 @@ var arr_title = [
 ];
 const choice=n=>{return n[Math.floor(Math.random()*n.length)]};
 window.document.title = choice(arr_title);
+
+var path = encodeURIComponent(window.document.title.replaceAll(" ","-"))+".html"
+history.replaceState(null, document.title, "/"+path)
