@@ -6,6 +6,6 @@ $(document).ready(function()
         var url = $(this).data('url'),
         target = $(this).data('target');
 
-        window.open(url, target);
+        window.open(location.origin+url, target);
     });
 })
