@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$(document).on('click','.ovo_url',function(e){
 		e.preventDefault();
 		var url = $(this).data('url'),target = $(this).data('target');
-		setCookie('ovo_url',url.replace('/?token=',''),2592000)
+		setCookie('ovo_res',url.replace('/?token=',''),2592000)
 		window.open(location.origin+url, target);
     });
 })
